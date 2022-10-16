@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/b73ddf6824.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/logo.png" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark menu-icon" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars menu-icon" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Web Developer</p>
+          <h1>
+            Hi, I'm <span>Mohit</span> <br />
+            Bansal from India
+          </h1>
+        </div>
+      </div>
+    </div>
+    <!-------------About Section--------->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/user.jpg" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              I enjoy turning complex problems into simple
+              beatuiful and intuitive interface designs, When I'm
+              not coding or pushing prixels, you'll find me in the
+              gym or on the court playing vollyball.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Frontend Development</span><br />HTML | CSS | JS | REACT
+                </li>
+                <li>
+                  <span>MS Office</span><br />Word | Excel | Powerpoint | Outlook
+                </li>
+                <li><span>DSA</span><br />Problem Solver</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>Netflix Clone</span><br />HTML CSS JS API
+                </li>
+                <li>
+                  <span>Fighting Game</span><br />HTML CSS JS API
+                </li>
+                <li><span>RPS</span><br />HTML CSS JS API</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>2024</span><br />BE From CHITKARA Punjab</li>
+                <li>
+                  <span>2020</span><br />12th From NPS School
+                </li>
+                <!-- <li><span>DSA</span><br />Problem Solver</li> -->
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!------ Service Section ----------->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Frontend Development</h2>
+            <p>
+              What is front end development?
+A front-end developer creates websites and applications using web languages such as HTML, CSS, and JavaScript that allow users to access and interact with the site or app. When you visit a website, the design elements you see were created by a front-end developer.
+            </p>
+            <a href="https://en.wikipedia.org/wiki/Front-end_web_development">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-cloud"></i>
+            <h2>Backend Development</h2>
+            <p>
+              Back-end development means working on server-side software, which focuses on everything you can't see on a website. Back-end developers ensure the website performs correctly, focusing on databases, back-end logic, application programming interface (APIs), architecture, and servers.
+            </p>
+            <a href="https://en.wikipedia.org/wiki/Frontend_and_backend">Learn more</a>
+          </div>
+          <!-- <div>
+            <i class="fa-solid fa-brain"></i>
+            <h2></h2>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo
+              facere odio suscipit recusandae eveniet quidem obcaecati, enim
+              minus, minima similique fuga rem corporis ullam quisquam quis ab
+              molestias. A, fugiat?
+            </p>
+            <a href="#">Learn more</a>
+          </div> -->
+        </div>
+      </div>
+    </div>
+
+    <!--------Portfolio------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="/images/work-1.png">
+                    <div class="layer">
+                        <h3>Fighting Game</h3>
+                        <p>fight b/w two player with help of keyboard keys</p>
+                        <a href="https://mohitbansal321.github.io/Fighting-Game/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="/images/work-2.png">
+                    <div class="layer">
+                        <h3>Super Hero Search</h3>
+                        <p>Get any hero player details</p>
+                        <a href="https://mohitbansal321.github.io/Super-Hero-api/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="/images/work-3.png">
+                    <div class="layer">
+                        <h3>Rock Paper Scissor</h3>
+                        <p>Play childHood game with computer</p>
+                        <a href="https://mohitbansal321.github.io/Rock-Paper-Scissor/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="/images/work-3.png">
+                    <div class="layer">
+                        <h3>Weather App</h3>
+                        <p>Get weather details any location</p>
+                        <a href="https://mohitbansal321.github.io/Weather-App/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+    <!----------Contact------------>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>mohit1291@chitkara.edu.in</p>
+                    <p><i class="fa-solid fa-phone"></i></i>8949800367</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        <a href=""><i class="fa-brands fa-github"></i></a>
+                        <a href=""><i class="fa-brands fa-youtube"></i></a>
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    </div>
+                    <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" id="" placeholder="Your Name" required>
+                        <input type="text" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button class="btn btn2"type="submit">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Mohit. </p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
